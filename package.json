@@ -1,21 +1,37 @@
 {
-  "name": "talent-iq",
+  "name": "remote-interview-platform",
   "version": "1.0.0",
+  "description": "A full-stack remote interview platform with real-time video, collaborative coding, and scheduling features.",
   "main": "index.js",
   "scripts": {
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend",
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-    "start":"npm run start --prefix backend"
+    "start": "npm run start --prefix backend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lordaryan223/Interview-Platform.git"
+    "url": "git+https://github.com/ashutoshtiwari07/Remote-Interview-platform.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "interview",
+    "remote",
+    "platform",
+    "video-call",
+    "collaborative-coding",
+    "mern",
+    "nodejs",
+    "react"
+  ],
+  "author": "Ashutosh Tiwari",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Lordaryan223/Interview-Platform/issues"
+    "url": "https://github.com/ashutoshtiwari07/Remote-Interview-platform/issues"
   },
-  "homepage": "https://github.com/Lordaryan223/Interview-Platform#readme",
-  "description": ""
+  "homepage": "https://github.com/ashutoshtiwari07/Remote-Interview-platform#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
 }

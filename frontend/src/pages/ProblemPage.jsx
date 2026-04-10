@@ -5,14 +5,9 @@ import Navbar from '../components/Navbar';
 import ProblemDescription from '../components/ProblemDescription';
 import CodeEditorPanel from '../components/CodeEditorPanel';
 import OutputPanel from '../components/OutputPanel';
-import * as ResizablePanels from "react-resizable-panels";
+ import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
 import toast from 'react-hot-toast';
 import { Toaster } from "react-hot-toast";
-
-
-const Panel = ResizablePanels.Panel || ResizablePanels.default?.Panel;
-const PanelGroup = ResizablePanels.PanelGroup || ResizablePanels.default?.PanelGroup;
-const PanelResizeHandle = ResizablePanels.PanelResizeHandle || ResizablePanels.default?.PanelResizeHandle;
 
 import { executeCode } from '../lib/piston.js'; 
 import confetti from "canvas-confetti"
